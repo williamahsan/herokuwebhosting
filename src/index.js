@@ -2,6 +2,7 @@ const path = require('path');
 const express = require("express");
 const hbs = require('hbs');
 const app = express();
+const port = pocess.env.PORT || 3000
 
 // Builtin Midileware
 const staticPath = path.join(__dirname, "../public");
@@ -33,5 +34,5 @@ app.get("/", (req, res) => {
 
 
 app.listen(3000, () =>{
-	console.log('Server Running at localhost:3000')
+	console.log('Server Running at localhost:${port}')
 });
