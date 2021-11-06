@@ -34,5 +34,5 @@ app.get("/", (req, res) => {
 
 
 app.listen(3000, () =>{
-	console.log('Server Running at localhost:${port}')
+	console.log(`Server Running at localhost:${port}`)
 });
